@@ -2,7 +2,8 @@
 
 This website is intended to be an open-source collection of spectroscopy concepts; aside from
 the [holy texts](texts/books.md), I felt that it was overdue that common elements of molecular
-spectroscopy were consolidated into a single location. 
+spectroscopy were consolidated into a single location, perhaps in a more opinionated way than
+normal.
 
 The intended scope is anything to do with molecular spectroscopy, ranging from basic derivations
 of energy levels and intensities, to illustrative case studies (in the Herzberg style), to code
