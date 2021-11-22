@@ -4,10 +4,15 @@
   "description": "",
   "version": "1.0.0",
   "dependencies": {
-    "gatsby": "^2.23.18",
-    "gatsby-theme-garden": "^0.1.28",
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1"
+    "gatsby": "^3.13.0",
+    "gatsby-plugin-copy-files-enhanced": "^1.1.1",
+    "gatsby-remark-copy-linked-files": "^4.10.0",
+    "gatsby-remark-prismjs": "^5.10.0",
+    "gatsby-theme-kb": "^0.7.8",
+    "prism-themes": "^1.8.0",
+    "prismjs": "^1.24.1",
+    "rehype-katex": "^5.0.0",
+    "remark-math": "^3.0.1"
   },
   "keywords": [
     "foam"
@@ -16,7 +21,7 @@
   "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "start": "gatsby serve"
   }
 }
