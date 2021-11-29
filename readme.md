@@ -7,7 +7,7 @@ normal.
 
 The intended scope is anything to do with molecular spectroscopy, ranging from basic derivations
 of energy levels and intensities, to illustrative case studies (in the Herzberg style), to code
-implementations of concepts (preferably in a high level language like Python or Julia).
+implementations of concepts (preferably in a high level language like Python or Julia). The motivation is to connect textbook concepts with concrete implementations/cases.
 
 ## Contributions
 
