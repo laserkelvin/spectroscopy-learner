@@ -1,4 +1,4 @@
-# rigid-rotor
+# Rigid rotor
 
 
 The rigid rotor is the basic approximation to computing the rotational motions of
@@ -22,11 +22,28 @@ def i_xx(atoms: Atom) -> float:
     return sum([atom.mass * (atom.y**2 + atom.z**2) for atom in atoms])
 ```
 
-...and the rest is history. Like everything else in nature, things are simpler when
+...and the rest of the tensor follows. Like everything else in nature, things are simpler when
 this matrix is diagonal, which is found when the molecule is rotated to align with
 its *principal axes*, where $xyz$ align with how the mass is distributed throughout
-the molecule. If that's the case, the rotational energy is given by:
+the molecule. If that's the case, the energy associated with rotation is given by:
 
 $$E_r = \frac{1}{2}I_x \omega_x^2 + \frac{1}{2}I_y \omega_y^2 + \frac{1}{2}I_z \omega_z^2$$
 
 where $I_x, I_y$, and $I_z$ are the principal moments of inertia.
+
+## Linear molecules
+
+- One unique moment of inertia, leads to a single rotational constant $B$.
+
+## Symmetric tops
+
+- Two unique moments of inertia, leads to two rotational constants: $A$ and $B$&mdash;notation may differ where some programs use $B$ and $C$ instead, for example `PGopher`. In the case of `PGopher`, $C$ corresponds to the top axis (i.e. the one with the most mass).
+- Two quantum numbers needed to uniquely represent each energy level: $J$ for total rotation, $K$ for the projection of $J$ onto the top axis.
+
+### Behavior
+
+- Transitions with $\Delta K \neq 0$ are not observed for rigid rotors; you need [[centrifugal-distortion]]
+
+## Asymmetric tops
+
+- No analytic
