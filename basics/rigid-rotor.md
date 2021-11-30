@@ -34,12 +34,24 @@ where $I_x, I_y$, and $I_z$ are the principal moments of inertia.
 ## Linear molecules
 
 - One unique moment of inertia, leads to a single rotational constant $B$.
+- The energy level expression is given by:
+
+$$E(J) = BJ(J+1)$$
+
+### Behavior
+
+As simple as they come&mdash;the rigid linear rotor has harmonically spaced energy levels: every energy level is given by some quadratically increasing multiple of $J$.
 
 ## Symmetric tops
 
+- Chapter 6 of [[gordy-cook]]
 - Two unique moments of inertia, leads to two rotational constants: $A$ and $B$&mdash;notation may differ where some programs use $B$ and $C$ instead, for example `PGopher`. In the case of `PGopher`, $C$ corresponds to the top axis (i.e. the one with the most mass).
 - Two quantum numbers needed to uniquely represent each energy level: $J$ for total rotation, $K$ for the projection of $J$ onto the top axis.
-- The symmetric top Hamiltonian is also diagonal in a $J,K$ basis
+- The symmetric top Hamiltonian is also diagonal in a $J,K$ basis, and so to get the energy levels you just need to use analytic expressions:
+
+$$E(J,K)=BJ(J+1) + (A - B) K^2$$
+
+...a corresponding one including [[centrifugal-distortion]] is also available.
 
 ### Behavior
 
@@ -62,4 +74,10 @@ In the prolate limit ($\kappa=-1$), with quantum numbers $J, K_a, K_c$:
 
 ![](images/2021-11-30-12-25-56.png)
 
-the biggest difference is the ordering of the energy levels swap between the two within a value of $J$ (e.g. look at the $J=3$ stack).
+the biggest difference is the ordering of the energy levels swap between the two within a value of $J$ (e.g. look at the $J=3$ stack), and effectively which energy levels are degenerate (overlapping).
+
+Finally, in the perfectly asymmetric case:
+
+![](images/2021-11-30-12-44-10.png)
+
+...the energy level structure is significantly more complicated, as the degeneracy of $K$ levels are lifted; this is referred to as asymmetry or $K$-splitting.
