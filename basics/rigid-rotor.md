@@ -39,6 +39,7 @@ where $I_x, I_y$, and $I_z$ are the principal moments of inertia.
 
 - Two unique moments of inertia, leads to two rotational constants: $A$ and $B$&mdash;notation may differ where some programs use $B$ and $C$ instead, for example `PGopher`. In the case of `PGopher`, $C$ corresponds to the top axis (i.e. the one with the most mass).
 - Two quantum numbers needed to uniquely represent each energy level: $J$ for total rotation, $K$ for the projection of $J$ onto the top axis.
+- The symmetric top Hamiltonian is also diagonal in a $J,K$ basis
 
 ### Behavior
 
@@ -46,4 +47,19 @@ where $I_x, I_y$, and $I_z$ are the principal moments of inertia.
 
 ## Asymmetric tops
 
-- No analytic
+- No analytic expression is available, and we have to solve it numerically using matrix methods.
+- Within a symmetric top basis (i.e. $J,K$), the asymmetric rotor Hamiltonian is block-diagonal, meaning there are no off-diagonal elements between $J$ levels.
+
+### Behavior
+
+The energy level structure changes based on how asymmetric the molecule is between two limits: the [[prolate]] and [[oblate]] limits. A convenient metric is Ray's [[asymmetry-parameter]].
+
+In the prolate limit ($\kappa=-1$), with quantum numbers $J, K_a, K_c$:
+
+![](images/2021-11-30-12-24-59.png)
+
+...and in the oblate limit ($\kappa=1$):
+
+![](images/2021-11-30-12-25-56.png)
+
+the biggest difference is the ordering of the energy levels swap between the two within a value of $J$ (e.g. look at the $J=3$ stack).

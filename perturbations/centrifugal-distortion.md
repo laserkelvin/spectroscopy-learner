@@ -4,6 +4,7 @@ Building on top of the [[rigid-rotor]] approximation, we get a more "realistic" 
 
 ## The distortable rotor
 
+Stuff about $\tau$'s
 ## Reduced Hamiltonian
 
 See Watson's[^1] incredibly extensive paper on the matter; this is a heavily abridged version! The basic principle is that the full centrifugal distortion Hamiltonian ($\tau$) contains terms that are *arbitrary* and can be removed from consideration, substantially simplifying the problem.
@@ -33,6 +34,9 @@ Because modern programs solve the rotational Hamiltonian in a symmetric-top basi
 | | $\Delta_{K}$ | $D_K$ |
 | | $\delta_J$ | $d_1$ |
 | | $\delta_K$ | $d_2$ |
+
+### Relations with Kievlson-Wilson terms
+
 
 
 [^1]: Watson, J. K. G. Determination of Centrifugal Distortion Coefficients of Asymmetric‐Top Molecules. The Journal of Chemical Physics 1967, 46 (5), 1935–1949. https://doi.org/10.1063/1.1840957.
