@@ -29,7 +29,7 @@ the molecule. If that's the case, the energy associated with rotation is given b
 
 $$E_r = \frac{1}{2}I_x \omega_x^2 + \frac{1}{2}I_y \omega_y^2 + \frac{1}{2}I_z \omega_z^2$$
 
-where $I_x, I_y$, and $I_z$ are the principal moments of inertia.
+where $I_x, I_y$, and $I_z$ are the principal moments of inertia. More commonly, these are expressed as their respective inverses, which we refer to as *rotational constants* $A,B,C$.
 
 ## Linear molecules
 

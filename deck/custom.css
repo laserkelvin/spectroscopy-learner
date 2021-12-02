@@ -1,0 +1,17 @@
+:root {
+  --main-font-size: 30px;
+  --main-font: Helvetica, Roboto
+}
+
+.reveal {
+  font-size: 30px;
+  font-family: "Robot", "Helvetica", "Lato"
+}
+
+.reveal h1 {
+  font-size: 3vw;
+}
+
+.reveal h1, .reveal h2 {
+  font-family: "Noto Sans"
+}
